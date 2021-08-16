@@ -3,7 +3,7 @@ const RatingModel = require('../models/rating');
 const addName = async (req, res) => {
     const name = req.body;
     const Rating = new RatingModel({
-        name: req.body.name
+        name: req.body.childName
     });
     Rating.save()
     .then(()=>{
